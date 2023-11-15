@@ -1,66 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body class="font-sans">
+<!-- v1 for mobile -->
+<div class="grid grid-cols-4 grid-rows-1 gap-2 sm:p-3 p-2">
+    {{-- height/width --}}
+    <div class="card aspect-[4/5] bg-base-100 text-center shadow-xl">
+        <div class="flex flex-col pt-3  text-center justify-center items-center">
 
-    <!-- Navbar -->
-    <header class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Brand Name with Rocket Icon -->
-            <span class="font-semibold text-lg flex items-center">
-                <i class="fas fa-rocket text-xl mr-2"></i>
-                Your Brand Name
-            </span>
-            <!-- Navbar Links (Add more as needed) -->
-            <nav>
-                <a href="#" class="text-white hover:text-gray-300 mx-2">Home</a>
-                <a href="#" class="text-white hover:text-gray-300 mx-2">About</a>
-                <a href="#" class="text-white hover:text-gray-300 mx-2">Contact</a>
-            </nav>
+            <i class="fas fa-book sm:text-4xl text-2xl  mb-2"></i>
+            <h2 class="card-title text-base block text-center">Topics</h2>
         </div>
-    </header>
+    </div>
+    <div class="card   aspect-[4/5]   p-0  bg-base-100 text-center shadow-xl">
+        <div class="flex flex-col pt-3  text-center justify-center items-center">
 
-    <!-- Main Content -->
-    <div class="container mx-auto mt-8">
-
-        <!-- Grid Layout -->
-        <div class="grid grid-cols-4 gap-4">
-            <!-- Topics -->
-            <div class="border text-center p-4">
-                <i class="fas fa-book text-4xl mb-2"></i>
-                <h2 class="font-semibold text-lg">Topics</h2>
-            </div>
-            <!-- Tests -->
-            <div class="border text-center p-4">
-                <i class="fas fa-calendar-alt text-4xl mb-2"></i>
-                <h2 class="font-semibold text-lg">Tests</h2>
-            </div>
-            <!-- Tasks -->
-            <div class="border text-center p-4">
-                <i class="fas fa-tasks text-4xl mb-2"></i>
-                <h2 class="font-semibold text-lg">Tasks</h2>
-            </div>
-            <!-- Review Session -->
-            <div class="border text-center p-4">
-                <i class="fas fa-clock text-4xl mb-2"></i>
-                <h2 class="font-semibold text-lg">Review Session</h2>
-            </div>
+            <i class="fas fa-calendar-alt sm:text-4xl text-2xl mb-2"></i>
+            <h2 class="card-title text-base block text-center">Tests</h2>
         </div>
+    </div>
+    <div class="card   aspect-[4/5]   p-0  bg-base-100 text-center shadow-xl">
+        <div class="flex flex-col pt-3  text-center justify-center items-center">
 
+            <i class="fas fa-tasks sm:text-4xl text-2xl mb-2"></i>
+            <h2 class="card-title text-base block text-center">Tasks</h2>
+        </div>
+    </div>
+    <div class="card   aspect-[4/5]   p-0  bg-base-100 text-center shadow-xl">
+        <div class="flex flex-col pt-3  text-center justify-center items-center">
+
+            <i class="fas fa-clock sm:text-4xl text-2xl mb-2"></i>
+
+            <h2 class="card-title leading-4 text-base  sm:text-[] block text-center">Review Session</h2>
+        </div>
     </div>
 
-    <!-- Font Awesome CDN -->
-    <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> -->
 
-</body>
-</html>
+</div>
+
+
+<!-- v2 for laptop -->
+<x-app-layout>
+
+    <div class="grid grid-cols-4 grid-rows-1 gap-2 sm:p-3">
+        <div class="card    bg-base-100 text-center shadow-xl">
+            <div class="card-body text-center form-control justify-center items-center">
+
+                <i class="fas fa-book sm:text-4xl text-2xl  mb-2"></i>
+                <h2 class="card-title block text-center">Topics</h2>
+            </div>
+        </div>
+        <div class="card  p-0  bg-base-100 text-center shadow-xl">
+            <div class="card-body text-center form-control justify-center items-center">
+
+                <i class="fas fa-calendar-alt sm:text-4xl text-2xl mb-2"></i>
+                <h2 class="card-title block text-center">Tests</h2>
+            </div>
+        </div>
+        <div class="card  p-0  bg-base-100 text-center shadow-xl">
+            <div class="card-body text-center form-control justify-center items-center">
+
+                <i class="fas fa-tasks sm:text-4xl text-2xl mb-2"></i>
+                <h2 class="card-title block text-center">Tasks</h2>
+            </div>
+        </div>
+        <div class="card  p-0  bg-base-100 text-center shadow-xl">
+            <div class="card-body text-center form-control justify-center items-center">
+
+                <i class="fas fa-clock sm:text-4xl text-2xl mb-2"></i>
+
+                <h2 class="card-title block text-center">Review Session</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+</x-app-layout>
