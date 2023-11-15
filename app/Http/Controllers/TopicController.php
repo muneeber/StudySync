@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topic;
+use App\Models\Subject;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TopicController extends Controller
 {
@@ -12,7 +14,7 @@ class TopicController extends Controller
      */
     public function index()
     {
-        //
+        return  view('topics.index');
     }
 
     /**
@@ -20,7 +22,10 @@ class TopicController extends Controller
      */
     public function create()
     {
-        //
+        $subjects = Subject::all();
+        // dd($subjects);
+        // dd();
+        return  view('topics.create', ['subjects' => $subjects]);
     }
 
     /**
@@ -28,7 +33,22 @@ class TopicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 'user_id', 'title',  'date_added','subject_id'
+        // dd($request);
+       $vr= $request->validate([
+            'topic' => 'required',
+            'date' => 'required|date',
+            'subject' => 'required'
+        ]);
+        $res=Topic::create([
+            'user_id'=>Auth::user()->id,
+            'title'=>$vr['topic'],
+            'date_added'=>$vr['date'],
+            'subject_id'=>$vr['subject']
+        ]);
+        if($res){
+            return redirect()->back()->with('Success','Topic Added Successfully');
+        }
     }
 
     /**

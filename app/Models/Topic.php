@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Topic extends Model
 {
     use HasFactory;
-    protected $fillable = ['user_id', 'title', 'description', 'tags', 'date_added'];
+    protected $fillable = ['user_id', 'title', 'description', 'tags', 'date_added','subject_id'];
 
     public function user():BelongsTo
     {
@@ -20,5 +20,9 @@ class Topic extends Model
     public function reviewSessions():HasMany
     {
         return $this->hasMany(ReviewSession::class);
+    }
+    public function subject():BelongsTo
+    {
+        return $this->belongsTo(Subject::class);
     }
 }
