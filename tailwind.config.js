@@ -18,8 +18,12 @@ export default {
     },
 
     plugins: [forms],
-};
-module.exports = {
-    //...
     plugins: [require("daisyui")],
-  }
+    daisyui: {
+        themes: ["light","cupcake"],
+      },
+};
+// module.exports = {
+    //...
+    
+//   }
