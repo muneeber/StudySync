@@ -1,6 +1,6 @@
 <div>
     {{-- <h1 class="bg-base-100"> From {{   $startOfWeek->format('d-m-Y') }} To {{ $endOfWeek->format('d-m-Y') }}</h1> --}}
-    <div class="flex bg-gray-100">
+    <div class="flex justify-around bg-gray-100">
         <div class="form-control w-1/2">
             <label class="label">
                 <p class=" text-center text-sm font-bold ">From</p>
