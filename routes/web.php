@@ -27,7 +27,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-// Topic resource routes
+// To
+Route::middleware('auth')->group(function () {
 Route::resource('topics', TopicController::class);
 
 // Task resource routes
@@ -39,7 +40,6 @@ Route::resource('tests', TestController::class);
 // ReviewSession resource routes
 Route::resource('review-sessions', ReviewSessionController::class);
 
-Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

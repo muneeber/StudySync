@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Test extends Model
 {
     use HasFactory;
-    protected $fillable = ['user_id', 'test_description', 'test_date', 'test_marks'];
+    protected $fillable = ['user_id','unit'.'subject_id', 'test_description', 'test_date', 'test_marks'];
 
     public function user():BelongsTo
     {

@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('tests', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('subject_id')->constrained('subjects');
             $table->text('test_description');
+            $table->text('unit');
             $table->date('test_date');
             $table->integer('test_marks')->nullable();
             $table->timestamps();
