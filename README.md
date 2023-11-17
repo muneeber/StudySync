@@ -76,6 +76,8 @@ This project is licensed under the [MIT License](LICENSE).
 - Forgot Password
 - Tests Dynamic Date Data Change
 - Test more button
+- task functionality
+- desktop test showing feature
 
 
 
