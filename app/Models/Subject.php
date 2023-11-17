@@ -18,4 +18,8 @@ class Subject extends Model
     {
         return $this->hasMany(Test::class);
     }
+    public function review_sessions():HasMany
+    {
+        return $this->hasMany(ReviewSession::class);
+    }
 }

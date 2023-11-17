@@ -56,7 +56,7 @@
                     @else 
 
                         <tr class=" text-center py-2 bg-base-200">
-                            <td class=" text-center py-2">{{ \Carbon\Carbon::parse($test->test_date)->format('d-m') }}</td>
+                            <td class=" text-center py-2">{{ \Carbon\Carbon::parse($test->test_date)->format('l') }}</td>
                             <td class=" text-center py-2">{{ $test->subject->name }}</td>
                             <td class=" text-center py-2">{{ $test->unit }}</td>
                             <td class=" text-center py-2">

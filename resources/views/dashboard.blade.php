@@ -29,15 +29,17 @@
                 <h2 class="card-title text-base block text-center absolute bottom-[2px]">Tasks</h2>
             </div>
         </div>
-        <div class="card   aspect-[4/5]  relative  pb-1  bg-base-100 text-center shadow-xl">
-            <div class="flex flex-col pt-2   text-center justify-center items-center">
-                {{-- <i class="fas fa-clock sm:text-4xl text-2xl mb-2"></i> --}}
-                <img src="https://img.icons8.com/?size=48&id=13526&format=png" class="w-18 aspect-square"
-                    alt="">
-                <h2 class="card-title absolute bottom-1 text-base block text-center px-1">Revision</h2>
+        <a href="{{ route('review-sessions.index') }}">
+            <div class="card   aspect-[4/5]  relative  pb-1  bg-base-100 text-center shadow-xl">
+                <div class="flex flex-col pt-2   text-center justify-center items-center">
+                    {{-- <i class="fas fa-clock sm:text-4xl text-2xl mb-2"></i> --}}
+                    <img src="https://img.icons8.com/?size=48&id=13526&format=png" class="w-18 aspect-square"
+                        alt="">
+                    <h2 class="card-title absolute bottom-1 text-base block text-center px-1">Revision</h2>
+                </div>
             </div>
-        </div>
     </div>
+    </a>
     <div class="card max-w-sm m-2 card-side bg-base-100 shadow-xl pl-1">
         <figure class=" w-1/3"><img
                 src="https://ouch-cdn2.icons8.com/CO34_X739bydi9TcI3O4-57UaHPXWi2D_nEvxMvG3sA/rs:fit:368:255/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTk4/LzFjMTQzYjJjLTFl/MzEtNDFhZS1hNzU4/LTA5MmEzOTdhYmNj/Mi5wbmc.png"

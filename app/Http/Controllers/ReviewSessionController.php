@@ -12,7 +12,7 @@ class ReviewSessionController extends Controller
      */
     public function index()
     {
-        //
+        return view('review.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class ReviewSessionController extends Controller
      */
     public function create()
     {
-        //
+        return view('review.show');
     }
 
     /**
@@ -36,7 +36,7 @@ class ReviewSessionController extends Controller
      */
     public function show(ReviewSession $reviewSession)
     {
-        //
+        
     }
 
     /**
