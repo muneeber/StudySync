@@ -23,7 +23,7 @@ The Learning Tracker App is a simple web application designed to help users orga
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/learning-tracker-app.git
+   git clone https://github.com/muneeber/StudySync.git
 
 2. Install PHP dependencies::
 
