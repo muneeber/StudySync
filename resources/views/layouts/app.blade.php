@@ -24,10 +24,10 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="flex w-screen h-screen items-center justify-center">
-        <div class="mockup-phone">
-            <div class="camera"></div>
-            <div class="display">
+    <div class=" w-screen h-screen items-center justify-center hidden sm:flex">
+        <div class="mockup-phone hidden sm:block">
+            <div class="camera hidden sm:block"></div>
+            <div class="display hidden sm:block">
                 <div class="artboard  phone-1">
 
 
@@ -52,6 +52,23 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="min-h-screen sm:hidden bg-gray-100">
+        @include('layouts.navigation')
+
+        <!-- Page Heading -->
+        @if (isset($header))
+            <header class="bg-white shadow">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    {{ $header }}
+                </div>
+            </header>
+        @endif
+
+        <!-- Page Content -->
+        <main class="m-1">
+            {{ $slot }}
+        </main>
     </div>
 </body>
 
