@@ -44,7 +44,13 @@ The Learning Tracker App is a simple web application designed to help users orga
 6. Access the app in your web browser:
 
    [LocalHost](http://localhost:8000)
-
+7. Or run this:
+     ```bash
+    git clone https://github.com/muneeber/StudySync.git
+    cd StudySync
+    composer install
+    npm install
+   php artisan serve
 
 ## Usage
 
