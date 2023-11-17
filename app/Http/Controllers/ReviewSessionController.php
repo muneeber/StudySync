@@ -33,6 +33,7 @@ class ReviewSessionController extends Controller
 
     /**
      * Display the specified resource.
+     * 
      */
     public function show(ReviewSession $reviewSession)
     {
