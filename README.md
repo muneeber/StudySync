@@ -20,37 +20,43 @@ The Learning Tracker App is a simple web application designed to help users orga
 
 ### Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/muneeber/StudySync.git
-
-2. Install PHP dependencies::
-
-   ```bash
-   composer install
-3. Install JavaScript dependencies:
-
-   ```bash
-   npm install
+1. Create Database :
+    Create data named "StudySync"
    
-4. Set up the database:
-    - **Topics:** Import Sql File provided.
-      
-5. Start the development server::
-
-   ```bash
-   php artisan serve
-6. Access the app in your web browser:
-
-   [LocalHost](http://localhost:8000)
-7. Or run this:
+2. Import Sql file:
+    import SQL file given as studycurve2.sql
+9. Just Copy Paste it in PowerShell Opened in the folder:
      ```bash
     git clone https://github.com/muneeber/StudySync.git
     cd StudySync
     composer install
     npm install
+
+3. Clone the repository:
+
+   ```bash
+   git clone https://github.com/muneeber/StudySync.git
+
+4. Install PHP dependencies:
+
+   ```bash
+   composer install
+5. Install JavaScript dependencies:
+
+   ```bash
+   npm install
+   
+6. Set up the database:
+    - **Topics:** Import Sql File provided.
+      
+7. Start the development server::
+
+   ```bash
    php artisan serve
+8. Access the app in your web browser:
+
+   [LocalHost](http://localhost:8000)
+
 
 ## Usage
 
